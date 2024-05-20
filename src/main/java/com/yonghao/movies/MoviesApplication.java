@@ -13,10 +13,4 @@ public class MoviesApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MoviesApplication.class, args);
 	}
-
-	@GetMapping("/") //Shows that this method is a GET endpoint: A web API allowing clients to retreieve data from servers
-	//If it was /root inside the parenthesis then, whenever the website URL with /root is invoked then it will call the method Ex: localhost:8080/root
-	public String apiRoot() {
-		return "Hello World!";
-	}
 }
